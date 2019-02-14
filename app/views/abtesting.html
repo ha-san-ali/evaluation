@@ -1,0 +1,275 @@
+{% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }} {% endblock %} {% block pageScripts %}
+<script src="/public/javascripts/step-by-step-navigation.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %} {% block beforeContent %}
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="index.html">
+    Evaluating Digital Health Interventions
+  </a>
+</div>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">A/B Testing</h1>
+    <h2 class="govuk-heading-m">What is A/B testing?</h2>
+    <p>A/B testing involves comparing two different versions of something to see which performs better.</p>
+    <p>It helps you understand how the differences between the two versions affect users’ behaviour and outcomes.</p>
+    <p>As such, A/B testing is useful for any digital health intervention that uses an app, website or newsletter campaign.</p>
+
+    <h2 class="govuk-heading-m">What can you A/B test?</h2>
+    <p>You can A/B test almost anything that affects visitor behavior for example:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    <li>Headlines and text - including length, structure and position on the page</li>
+    <li>Content - including tone and language </li>
+    <li>Calls to action - including wording, size, colour and placement</li>
+    <li>Forms - including length, fields and descriptions</li>
+    <li>Images - like the choice between cartoon or realistic pictures</li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Pros</h2>
+    <p>A/B tests let you explore different ideas and then make changes based on solid quantitative data. You will be able to know with statistical confidence what the impact of these changes will be for your users.</p>
+
+    <h2 class="govuk-heading-m">Cons</h2>
+    <p>A/B tests can be complex to set up, and may need many users for the data to be statistically significant. But they are a powerful tool for making evidence-based design decisions.</p>
+
+<div class="filter-box">
+    <h2 class="govuk-heading-m">Example: Couch to 5K</h2>
+    <p>To do an A/B test with an app like Couch to 5K, you would design the test within the app itself. Typically, A is the existing design - called the ‘control’ - and B is the new design or variation on an element of the app.</p>
+    <p>For an app like Couch to 5K version A might be the existing instructions for using the app, and version B a new set of instructions the team wants to test. Users of Couch to 5K would be randomly allocated to either A or B, and this would decide the version of the instructions they would see.</p>
+    <p>After enough users have been through the experiment, it will be possible to tell with statistical confidence whether version A or B is performing better.</p>
+</div>
+<br>
+    <h2 class="govuk-heading-m">How to carry out A/B testing</h2>
+
+    <p><b>1. Study your existing data.</b> Using freely available analytic tools like Google Analytics, find problem areas in your intervention. For the running app Couch to 5K, for example, it appears users drop out of the programme in week 5.</p>
+    <p><b>2. Construct a hypothesis or a goal.</b>Using all your insights and data, develop a hypothesis for your problem or construct a goal.</p>
+    <p>An example hypothesis could be:</p>
+    <p>“Adding push notifications encouraging users to run to week 5 of the Couch to 5K running programme will increase the number of people completing week 5 of the programme.” An example goal could be: “I want more users to go for a run after they receive a push notification.”</p>
+    <p><b>3. Test your hypothesis or goal.</b> Create a new variation of your intervention that could help prove or disprove your hypothesis, then A/B test it against the original.</p>
+    <p><b>4. Decide how long to run the test.</b> You should base this on the number of monthly visitors, the expected change in the user behaviour and other factors. </p>
+    <p><b>5. Create a control and variation. </b>If you’re testing an existing web page or app, your control will be the original version. The new version will be your B.</p>
+    <p><b>6. Determine your sample size, if necessary. </b>See an example sample size calculation tool.</p>
+    <p><b>7. Split your sample groups equally and randomly. </b>If you can test with two or more groups that are relatively equal, your results will be more conclusive.
+    <p><b>8. Analyse the test data. </b>Analyse the results of your A/B test, comparing the outcomes of the original version against the variation. If there is an obviously better option from the A/B test, you can implement it. If the test results are inconclusive, you should review your hypothesis or goal, come up with new variations and continue A/B testing.</p>
+    <p><b>10. Report your results. </b>Share what you’ve learned with your colleagues to inform their work.</p>
+
+    <h2 class="govuk-heading-m">More information and resources</h2>
+    <p><a href="https://www.abtasty.com/">A/B Tasty</a></p>
+    <p><a href="https://www.adobe.com/uk/marketing/target.html?gclid=EAIaIQobChMItrOt_vb03gIVA5ztCh2T4AF-EAAYASAAEgKb3_D_BwE&s_cid=70114000002CaIbAAK&s_iid=70130000000kYe0AAE&sdid=X6FJHWGW&mv=search&edtamo=true&ef_id=EAIaIQobChMItrOt_vb03gIVA5ztCh2T4AF-EAAYASAAEgKb3_D_BwE:G:s&s_kwcid=AL!3085!3!248193002605!e!!g!!adobe%20target">Adobe Target</a></p>
+    <p><a href="https://help.campaignmonitor.com/ab-test-your-email-campaigns">Campaign Monitor</a></p>
+    <p><a href="https://support.google.com/analytics/answer/1745147?hl=en">Google Analytics Content Experiments</a></p>
+    <p><a href="https://www.optimizely.com/">Optimizely</a></p>
+</div>
+
+<!--navigation-->
+  <div class="govuk-grid-column-one-third">
+
+    <div class="app-step-nav-related app-step-nav-related--singular">
+      <h2 class="app-step-nav-related__heading">
+        <span class="app-step-nav-related__pretitle">Part of</span>
+        <a href="index.html">
+          Evaluating Digital Health Interventions
+        </a>
+      </h2>
+    </div>
+
+    <div id="step-by-step-navigation" data-module="gemstepnav" class="app-step-nav js-hidden " data-id="e01e924b-9c7c-4c71-8241-66a575c2f61f" data-show-text="show" data-hide-text="hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" data-show id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 1
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">Getting started
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph"><a href="whentoevaluate.html">When to carry out an evaluation</a>
+            <p class="app-step-nav__paragraph"><a href="howtobudget.html">How to budget for evaluation</a>
+            <p class="app-step-nav__paragraph"><a href="buildyourteam.html">Build your team</a>
+            <p class="app-step-nav__paragraph"><a href="jointhecommunity.html">Join the evaluation community</a>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 2
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Define your outcomes
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <p class="app-step-nav__paragraph"><a href="logicmodel.html">How to create a logic model</a></p>
+                <p class="app-step-nav__paragraph"><a href="servicejourney.html">How to map your service journey.</a></p>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 3
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Choose success indicators
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph"><a href="indicators.html">How to choose your success indicators</a></p>
+            <p class="app-step-nav__paragraph"><a href="browseindicators.html">Browse common indicators</a></p>
+
+
+            <ol class="app-step-nav__list " data-length="4">
+            </ol>
+
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+
+
+            <ol class="app-step-nav__list " data-length="5">
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 4
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Choose your methods
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph"><a href="methods.html">How to choose your methods</a></p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="when-you-pass" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 5
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Analyse your data
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <p class="app-step-nav__paragraph"><a href="next.html">How to analyse your data</a></p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+              </li>
+            </ol>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="when-you-pass" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="7">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 6
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Share your findings
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+              <p class="app-step-nav__paragraph"><a href="next.html">How to share your findings</a></p>
+
+              <ol class="app-step-nav__list " data-length="1">
+                <li class="app-step-nav__list-item js-list-item ">
+                </li>
+              </ol>
+
+          </div>
+
+        </li>
+      </ol>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+</div>
+</div>
+{% endblock %}
+<!--navigation-->

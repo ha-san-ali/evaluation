@@ -1,0 +1,368 @@
+{% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }} {% endblock %} {% block pageScripts %}
+<script src="/public/javascripts/step-by-step-navigation.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %} {% block beforeContent %}
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="index.html">
+    Evaluating Digital Health Interventions
+  </a>
+</div>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Choose evaluation methods</h1>
+    <h2 class="govuk-heading-m">What is an evaluation method?</h2>
+    <p>A way of collecting data on the impact of a digital health intervention.</p>
+
+    <h2 class="govuk-heading-m">Why choose evaluation methods?</h2>
+    <p>You should select the evaluation methods that are most appropriate to your indicators and outcomes, so you can collect the relevant data.</p>
+
+<div class="filter-results-box">
+    <h2 class="govuk-heading-m">Case study: Couch to 5K</h2>
+    <p>The Couch to 5K team completed their logic model, mapped their service and chose their indicators, so they had everything they needed to choose their evaluation methods.</p>
+    <p>They used the methods library filters to understand which methods might be suitable for their project.</p>
+    <p>The team did not have the resources to meet people face-to-face for a focus group, but the methods library showed that a series of A/B tests may be the best way to evaluate the service.</p>
+</div>
+
+    <h2 class="govuk-heading-m">How to choose your methods</h2>
+    <p>The National Institute for Health and Care Excellence have put together a set of <a href= https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies>evidence standards for digital health technologies</a> (DHTs) that are intended to be commissioned or used within the UK health and social care system. As such, the methods below are sorted with the most reliable at the top, and the least reliable at the bottom.</p>
+
+    <p>Use the filters below to understand which methods might be most useful to you in evaluating your digital health intervention.</p>
+</div>
+
+<!--navigation-->
+  <div class="govuk-grid-column-one-third">
+
+    <div class="app-step-nav-related app-step-nav-related--singular">
+      <h2 class="app-step-nav-related__heading">
+        <span class="app-step-nav-related__pretitle">Part of</span>
+        <a href="index.html">
+          Evaluating Digital Health Interventions
+        </a>
+      </h2>
+    </div>
+
+    <div id="step-by-step-navigation" data-module="gemstepnav" class="app-step-nav js-hidden " data-id="e01e924b-9c7c-4c71-8241-66a575c2f61f" data-show-text="show" data-hide-text="hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" data-show id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 1
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">Getting started
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph"><a href="whentoevaluate.html">When to carry out an evaluation</a>
+            <p class="app-step-nav__paragraph"><a href="howtobudget.html">How to budget for evaluation</a>
+            <p class="app-step-nav__paragraph"><a href="buildyourteam.html">Build your team</a>
+            <p class="app-step-nav__paragraph"><a href="jointhecommunity.html">Join the evaluation community</a>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 2
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Define your outcomes
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <p class="app-step-nav__paragraph"><a href="logicmodel.html">How to create a logic model</a></p>
+                <p class="app-step-nav__paragraph"><a href="servicejourney.html">How to map your service journey.</a></p>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 3
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Choose success indicators
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph"><a href="indicators.html">How to choose your success indicators</a></p>
+            <p class="app-step-nav__paragraph"><a href="browseindicators.html">Browse common indicators</a></p>
+
+
+            <ol class="app-step-nav__list " data-length="4">
+            </ol>
+
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+
+
+            <ol class="app-step-nav__list " data-length="5">
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 4
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Choose your methods
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph"><a href="methods.html">How to choose your methods</a></p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="when-you-pass" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 5
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Analyse your data
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <p class="app-step-nav__paragraph"><a href="next.html">How to analyse your data</a></p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+              </li>
+            </ol>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="when-you-pass" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="7">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 6
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Share your findings
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+              <p class="app-step-nav__paragraph"><a href="next.html">How to share your findings</a></p>
+
+              <ol class="app-step-nav__list " data-length="1">
+                <li class="app-step-nav__list-item js-list-item ">
+                </li>
+              </ol>
+
+          </div>
+
+        </li>
+      </ol>
+    </div>
+
+
+  </div>
+
+</div>
+
+<!--navigation-->
+
+
+
+<!--beginning of methods filters-->
+<div class="govuk-grid-row">
+
+<!--beginning of all methods-->
+  <div class="govuk-grid-column-two-thirds">
+  <h2 class="govuk-heading-m">Browse all methods</h2>
+  <!--Randomised control trial-->
+  <hr style="">&nbsp;</hr>
+  <h3 class="govuk-heading-s"><a href="abtesting.html">Randomised Control Trial</a></h3>
+  <p>A study in which a number of similar people are randomly assigned to 2 (or more) groups (also called arms) to test a specific drug, treatment or other intervention. One group (the experimental group) has the intervention being tested, the other (the comparison or control group) has an alternative intervention, a dummy intervention (placebo) or no intervention at all.</p>
+  <!--Multivariate testing-->
+  <hr style="">&nbsp;</hr>
+  <h3 class="govuk-heading-s"><a href="abtesting.html">Multivariate testing</a></h3>
+  <p>Multivariate testing is a way of testing complex products or services which have multiple elements or components.Teams create variations of the different elements of an app or website. These are then combined to create multiple different versions of the entire app or website.This approach is in contrast to A/B testing, which is designed to test just one variation or change at a time using two different sets of users.</p>
+<!--ab testing-->
+  <hr style="">&nbsp;</hr>
+  <h3 class="govuk-heading-s"><a href="abtesting.html">A/B Testing</a></h3>
+  <p>A/B testing involves comparing two different versions of a thing, to see which performs better. It helps you understand how the differences between the two versions affect users’ behaviour and outcomes.</p>
+<!--focus group-->
+<hr style="">&nbsp;</hr>
+<h3 class="govuk-heading-s"><a href="abtesting.html">Focus group</a></h3>
+<p>Spending time with a group of participants carrying out qualitative research in order to learn about a specifi topic. Encouraging discussion in order to learn about a topic.</p>
+<!--interupted time series-->
+<hr style="">&nbsp;</hr>
+<h3 class="govuk-heading-s"><a href="abtesting.html">Interupted time series</a></h3>
+<p>Multiple measurements are taken using serial quantitative surveys before, during and after an intervention – or before and during if an intervention is the introduction of something routine or permanent. Each measurement is taken from a sample of the same population, instead of the same people being followed up, as in a RCT or non-randomised study.</p>
+<!--Multivariate testing-->
+<hr style="">&nbsp;</hr>
+<h3 class="govuk-heading-s"><a href="abtesting.html">Multivariate testing</a></h3>
+<p>Multivariate testing is a way of testing complex products or services which have multiple elements or components.Teams create variations of the different elements of an app or website. These are then combined to create multiple different versions of the entire app or website.This approach is in contrast to A/B testing, which is designed to test just one variation or change at a time using two different sets of users.</p>
+<!--Natural experiment-->
+<hr style="">&nbsp;</hr>
+<h3 class="govuk-heading-s"><a href="abtesting.html">Natural experiment</a></h3>
+<p>Particularly comparing to non exposed area, or other devolved nation. Again useful when we are doing a large population rollout, and cannot randomise. We will try something along these lines for the new digital mental health campaign.</p>
+<!--Natural experiment-->
+<hr style="">&nbsp;</hr>
+<h3 class="govuk-heading-s"><a href="abtesting.html">Natural experiment</a></h3>
+<p>Particularly comparing to non exposed area, or other devolved nation. Again useful when we are doing a large population rollout, and cannot randomise. We will try something along these lines for the new digital mental health campaign.</p>
+
+</div>
+
+<!--filter methods-->
+  <div class="govuk-grid-column-one-third">
+    <div class="filter-box">
+            <h2 class="govuk-heading-m">Filter methods</h2>
+              <legend>
+                <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 20px; ">Access to participants</h3>
+              </legend
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <div class="multiple-choice--hod">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        face-to-face
+                      </label>
+                    </div>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <div class="multiple-choice--hod">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        via text
+                      </label>
+                    </div>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <div class="multiple-choice--hod">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        over the phone
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        online
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        in app/web platform
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+    <div class="form-group">
+    <div class="filters">
+    <div class="form-group">
+    <label class="govuk-label" for="sort" style="font-weight: bold;">Level of clinical risk* </label>
+    <select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+    </select>
+    <br><br>
+    <a style="margin-top: 10px; margin-left: 0px; margin-bottom: 0px; float: left;" href="" role="button" class="govuk-button">Apply filters</a>
+    <div class="clear-filters">
+    <a href="">Clear filters</a>
+    </div>
+    </div>
+    </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+</div>
+</div>
+{% endblock %}

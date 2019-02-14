@@ -1,0 +1,266 @@
+{% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }} {% endblock %} {% block pageScripts %}
+<script src="/public/javascripts/step-by-step-navigation.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %} {% block beforeContent %}
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="index.html">
+    Evaluating Digital Health Interventions
+  </a>
+</div>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Create a logic model</h1>
+    <h2 class="govuk-heading-m">What is a logic model?</h2>
+    <p>Logic modelling is a tool that can be useful in the development of monitoring and evaluation plans as they help to identify short-, medium- and long-term outcomes that are linked to the key activities of a programme or strategy.</p>
+
+    <h2 class="govuk-heading-m">Why create a logic model?</h2>
+    <p>Use a logic model to understand what the intended health outcomes of your digital health intervention are, and how they will be achieved.</p>
+    <p>Logic models are usually designed by a study team rather than a single researcher. We recommend holding a workshop with your key stakeholders to develop your logic model together. </p>
+    <p>Ideally, logic models should be developed during intervention development, or in the early stages of planning an evaluation, so that they can be used to inform the design of the process evaluation and data collection.</p>
+
+<div class="filter-results-box">
+    <h2 class="govuk-heading-m">Case study: Couch to 5K</h2>
+    <p>The Couch to 5K team built their logic model in a face-to-face workshop. Starting with the logic model template, they sat down to discuss the various elements. </p>
+    <p>First, they clearly framed their hypothesis: that their app would help users be more active and lose weight. </p>
+    <p>Then, they thought about how this would be expressed as individual health outcomes, from short to long term.  Next, they considered the specific outputs their service could create to help reach those outcomes, like “The user completes a 5K run”.</p>
+    <p>Once it was completed, the team’s logic model gave them a clear and standardised overview of their project’s components.</p>
+
+    <img src="public/images/logic-model.png" alt="logic-model.png" style="max-width:570px;">
+    <p> </p>
+</div>
+
+    <h2 class="govuk-heading-m">How to create a logic model</h2>
+
+    <h3 class="govuk-heading-s">Hypothesis and Assumptions<h3>
+    <p>Explain the problem you are trying to solve or the opportunity you are exploring. Consider any assumptions that you have about the digital health intervention and your project. Think about what your digital health intervention needs to do to be successful. </p>
+
+    <h3 class="govuk-heading-s">Outcomes<h3>
+    <p>Think about how your digital health intervention could improve the public's health, and decide on the health outcomes that your digital health intervention is trying to achieve. Health outcomes are the direct and specific results of an intervention, usually for those receiving the care or otherwise targeted. These might include things like reducing diabetes rates. </p>
+
+    <h3 class="govuk-heading-s">Inputs and activities<h3>
+    <p>List the resources you have available for your project, including your budget, equipment and the people and organisations working on it. Decide on the processes, events, technology and actions you will use to deliver your digital health intervention.</p>
+
+    <h3 class="govuk-heading-s">Outputs<h3>
+    <p>Consider how your digital health intervention, and its interactions with your users, could create your chosen health outcomes. What specific things will your intervention need to deliver to make them happen? You may also think about how your digital health intervention could negatively impact on these health outcomes.</p>
+
+    <h3 class="govuk-heading-s">Context and barriers<h3>
+    <p>Describe the users of your digital health intervention, the policies or strategies that it supports, and the funding you have.Discuss any constraints that may stop you from delivering your digital health intervention, or keep it from being successful.</p>
+
+  <h2 class="govuk-heading-m">Create a logic model in a workshop</h2>
+  <p><a href="https://drive.google.com/drive/u/0/folders/1RLkLtdnAbr7AoYzhiXnNsKJNnSVHdj38">Click here to download a printable template</a></p>
+
+  </div>
+
+    <!--navigation-->
+      <div class="govuk-grid-column-one-third">
+
+        <div class="app-step-nav-related app-step-nav-related--singular">
+          <h2 class="app-step-nav-related__heading">
+            <span class="app-step-nav-related__pretitle">Part of</span>
+            <a href="index.html">
+              Evaluating Digital Health Interventions
+            </a>
+          </h2>
+        </div>
+
+        <div id="step-by-step-navigation" data-module="gemstepnav" class="app-step-nav js-hidden " data-id="e01e924b-9c7c-4c71-8241-66a575c2f61f" data-show-text="show" data-hide-text="hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+          <ol class="app-step-nav__steps">
+            <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" data-show id="check-youre-allowed-to-drive" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="1">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 1
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">Getting started
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+                <p class="app-step-nav__paragraph"><a href="whentoevaluate.html">When to carry out an evaluation</a>
+                <p class="app-step-nav__paragraph"><a href="howtobudget.html">How to budget for evaluation</a>
+                <p class="app-step-nav__paragraph"><a href="buildyourteam.html">Build your team</a>
+                <p class="app-step-nav__paragraph"><a href="jointhecommunity.html">Join the evaluation community</a>
+
+              </div>
+
+            </li>
+            <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="2">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 2
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">
+                    Define your outcomes
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+                <ol class="app-step-nav__list " data-length="1">
+                  <li class="app-step-nav__list-item js-list-item ">
+                    <p class="app-step-nav__paragraph"><a href="logicmodel.html">How to create a logic model</a></p>
+                    <p class="app-step-nav__paragraph"><a href="servicejourney.html">How to map your service journey.</a></p>
+                  </li>
+                </ol>
+
+              </div>
+
+            </li>
+            <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="3">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 3
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">
+                    Choose success indicators
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+                <p class="app-step-nav__paragraph"><a href="indicators.html">How to choose your success indicators</a></p>
+                <p class="app-step-nav__paragraph"><a href="browseindicators.html">Browse common indicators</a></p>
+
+
+                <ol class="app-step-nav__list " data-length="4">
+                </ol>
+
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+
+
+                <ol class="app-step-nav__list " data-length="5">
+                </ol>
+
+              </div>
+
+            </li>
+            <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="6">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 4
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">
+                    Choose your methods
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+                <p class="app-step-nav__paragraph"><a href="methods.html">How to choose your methods</a></p>
+
+                <ol class="app-step-nav__list " data-length="5">
+                  <li class="app-step-nav__list-item js-list-item ">
+                  </li>
+                </ol>
+
+              </div>
+
+            </li>
+            <li class="app-step-nav__step js-step" id="when-you-pass" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="7">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 5
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">
+                    Analyse your data
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+                <p class="app-step-nav__paragraph"><a href="next.html">How to analyse your data</a></p>
+
+                <ol class="app-step-nav__list " data-length="1">
+                  <li class="app-step-nav__list-item js-list-item ">
+                  </li>
+                </ol>
+
+              </li>
+              <li class="app-step-nav__step js-step" id="when-you-pass" >
+                <div class="app-step-nav__header js-toggle-panel" data-position="7">
+                  <h3 class="app-step-nav__title">
+                    <span class="app-step-nav__circle app-step-nav__circle--number">
+                      <span class="app-step-nav__circle-inner">
+                        <span class="app-step-nav__circle-background">
+                          <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 6
+                          <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                        </span>
+                      </span>
+                    </span>
+
+                    <span class="js-step-title">
+                      Share your findings
+                    </span>
+                  </h3>
+                </div>
+
+                <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+                  <p class="app-step-nav__paragraph"><a href="next.html">How to share your findings</a></p>
+
+                  <ol class="app-step-nav__list " data-length="1">
+                    <li class="app-step-nav__list-item js-list-item ">
+                    </li>
+                  </ol>
+
+              </div>
+
+            </li>
+          </ol>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    </div>
+    </div>
+    {% endblock %}
+    <!--navigation-->

@@ -1,0 +1,263 @@
+{% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }} {% endblock %} {% block pageScripts %}
+<script src="/public/javascripts/step-by-step-navigation.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %} {% block beforeContent %}
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="index.html">
+    Evaluating Digital Health Interventions
+  </a>
+</div>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Map your service journey</h1>
+    <h2 class="govuk-heading-m">What is a service journey?</h2>
+    <p>A service journey is a simple timeline from left to right, showing how your users interact with the digital health intervention at different stages. You can then link these interactions to the health outcomes your digital health intervention is trying to create.</p>
+
+    <h2 class="govuk-heading-m">Why create a service journey?</h2>
+    <p>Use a service journey to get an overview of how your digital health intervention meets user needs and achieves its intended health outcomes over time. Creating a service journey will help you to align your user needs, interactions with the service actions and health outcomes.</p>
+
+<div class="filter-results-box">
+    <h2 class="govuk-heading-m">Case study: Couch to 5K</h2>
+    <p>The Couch to 5K team started by considering their users' needs at each stage of interacting with the app – from being completely unaware of it to stopping using it, and important touchpoints between.</p>
+    <p>This helped them think about how the app's activities meet those needs – and how they could affect health outcomes.</p>
+    <p>For example, the team knew their users need to stay motivated when using the app. To meet this need, the app provides motivational messages and bonus incentives. This targets the health outcome 'user is confident enough to go for a run'.</p>
+
+    <img src="public/images/service-journey.png" alt="service-journey.png" style="max-width:570px;">
+    <p> </p>
+</div>
+
+    <h2 class="govuk-heading-m">How to map your service journey</h2>
+
+    <h3 class="govuk-heading-s">Step 1: Map the user’s journey through your service<h3>
+    <p>You can create a service journey for an existing digital health intervention, or for an entirely new one. You can create a service journey during a face-to-face or online workshop.</p>
+    <p>The evaluation lead for your digital health intervention or another team member should facilitate the service journey workshop and ensure the outputs are written up and shared with the team.</p>
+    <p>Your research should help you understand who your users are, their needs and how they could potentially use your digital health intervention.</p>
+    <p>You should work with your stakeholders to understand the different stages of your service journey, and which user needs are met at each stage. As you do this, map the relevant user needs to the appropriate stage. </p>
+    <p>This activity will help you understand the digital health intervention from the user’s point of view, and establish the most important touchpoints in their journey.</p>
+
+    <h3 class="govuk-heading-s">Step 2: Map the health outcomes to the service journey <h3>
+    <p>Once you know the health outcomes your digital health intervention could impact, you can start thinking about how these relate to the user and the service journey.</p>
+    <p>You then need to map the short, medium and long-term health outcomes from your logic model to the service journey. </p>
+    <p>Don’t worry if you can’t map all of the health outcomes. Some medium and long-term health outcomes, such as ‘reduction in cardiovascular diseases in the United Kingdom’, will not be measurable in the journey through your service.</p>
+
+    <h3 class="govuk-heading-s">Step 3: Map the service actions to the service journey<h3>
+    <p>As you develop your digital health intervention, you will need to reach a clear understanding of your service’s actions, or what your service does for the user, at each stage of the service journey.</p>
+    <p>Working with your team, bring together all the information you have about what the service does and map these service actions to the service journey. </p>
+  <h2 class="govuk-heading-m">Map a service journey in a workshop</h2>
+  <p><a href="https://drive.google.com/drive/u/0/folders/1RLkLtdnAbr7AoYzhiXnNsKJNnSVHdj38">Click here to download a printable template</a></p>
+
+  </div>
+
+  <!--navigation-->
+    <div class="govuk-grid-column-one-third">
+
+      <div class="app-step-nav-related app-step-nav-related--singular">
+        <h2 class="app-step-nav-related__heading">
+          <span class="app-step-nav-related__pretitle">Part of</span>
+          <a href="index.html">
+            Evaluating Digital Health Interventions
+          </a>
+        </h2>
+      </div>
+
+      <div id="step-by-step-navigation" data-module="gemstepnav" class="app-step-nav js-hidden " data-id="e01e924b-9c7c-4c71-8241-66a575c2f61f" data-show-text="show" data-hide-text="hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+        <ol class="app-step-nav__steps">
+          <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" data-show id="check-youre-allowed-to-drive" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="1">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 1
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">Getting started
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+              <p class="app-step-nav__paragraph"><a href="whentoevaluate.html">When to carry out an evaluation</a>
+              <p class="app-step-nav__paragraph"><a href="howtobudget.html">How to budget for evaluation</a>
+              <p class="app-step-nav__paragraph"><a href="buildyourteam.html">Build your team</a>
+              <p class="app-step-nav__paragraph"><a href="jointhecommunity.html">Join the evaluation community</a>
+
+            </div>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="2">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 2
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Define your outcomes
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+              <ol class="app-step-nav__list " data-length="1">
+                <li class="app-step-nav__list-item js-list-item ">
+                  <p class="app-step-nav__paragraph"><a href="logicmodel.html">How to create a logic model</a></p>
+                  <p class="app-step-nav__paragraph"><a href="servicejourney.html">How to map your service journey.</a></p>
+                </li>
+              </ol>
+
+            </div>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="3">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 3
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Choose success indicators
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+              <p class="app-step-nav__paragraph"><a href="indicators.html">How to choose your success indicators</a></p>
+              <p class="app-step-nav__paragraph"><a href="browseindicators.html">Browse common indicators</a></p>
+
+
+              <ol class="app-step-nav__list " data-length="4">
+              </ol>
+
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+
+
+              <ol class="app-step-nav__list " data-length="5">
+              </ol>
+
+            </div>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="6">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 4
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Choose your methods
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+              <p class="app-step-nav__paragraph"><a href="methods.html">How to choose your methods</a></p>
+
+              <ol class="app-step-nav__list " data-length="5">
+                <li class="app-step-nav__list-item js-list-item ">
+                </li>
+              </ol>
+
+            </div>
+
+          </li>
+          <li class="app-step-nav__step js-step" id="when-you-pass" >
+            <div class="app-step-nav__header js-toggle-panel" data-position="7">
+              <h3 class="app-step-nav__title">
+                <span class="app-step-nav__circle app-step-nav__circle--number">
+                  <span class="app-step-nav__circle-inner">
+                    <span class="app-step-nav__circle-background">
+                      <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 5
+                      <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                    </span>
+                  </span>
+                </span>
+
+                <span class="js-step-title">
+                  Analyse your data
+                </span>
+              </h3>
+            </div>
+
+            <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+              <p class="app-step-nav__paragraph"><a href="next.html">How to analyse your data</a></p>
+
+              <ol class="app-step-nav__list " data-length="1">
+                <li class="app-step-nav__list-item js-list-item ">
+                </li>
+              </ol>
+
+            </li>
+            <li class="app-step-nav__step js-step" id="when-you-pass" >
+              <div class="app-step-nav__header js-toggle-panel" data-position="7">
+                <h3 class="app-step-nav__title">
+                  <span class="app-step-nav__circle app-step-nav__circle--number">
+                    <span class="app-step-nav__circle-inner">
+                      <span class="app-step-nav__circle-background">
+                        <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 6
+                        <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <span class="js-step-title">
+                    Share your findings
+                  </span>
+                </h3>
+              </div>
+
+              <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+                <p class="app-step-nav__paragraph"><a href="next.html">How to share your findings</a></p>
+
+                <ol class="app-step-nav__list " data-length="1">
+                  <li class="app-step-nav__list-item js-list-item ">
+                  </li>
+                </ol>
+
+            </div>
+
+          </li>
+        </ol>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  </div>
+  </div>
+  {% endblock %}
+  <!--navigation-->

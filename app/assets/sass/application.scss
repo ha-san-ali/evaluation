@@ -1,0 +1,40 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.filter-box {
+  background-color: #d8d8d8;
+  padding: 20px 10px 20px 30px;
+  margin-bottom: 10px;
+}
+
+.clear-filters {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.filter-results-box {
+  background-color: #d6d6d6;
+  padding: 20px 10px 3px 30px;
+  margin-bottom: 10px;
+}
+
+.filter-results-box-selected {
+  background-color: #0C60A3;
+  padding: 20px 10px 3px 30px;
+  margin-bottom: 10px;
+}
