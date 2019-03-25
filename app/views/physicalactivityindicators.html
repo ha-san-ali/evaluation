@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="index.html">
+    Evaluating Health Products
+  </a>
+</div>
+
+<br>
+<p>
+  <a href="browseindicators.html" style="text-decoration:none;">
+    <span class="hod-chevron-left side-space icon-small"></span>
+    Back to previous page
+  </a>
+  </p>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+<!--title and intro-->
+<h1 class="govuk-heading-xl">Physical activity indicators</h1>
+
+<h3 class="govuk-heading-s">Narrowing down your choices</h3>
+
+<p>Here are the indicators associated with your health area. The next step is the select the indicators which are relevant to your evaluation.
+<p>When selecting your indicators, bear in mind:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>is this indicator relevant to my intended health outcomes?</li>
+<li>is this indicator measurable?</li>
+<li>is it possible to gather data on this indicator?</li>
+<li>will the data be reliable?</li>
+</ul>
+
+<h3 class="govuk-heading-s">Select your indicators</h3>
+<!--filter results-->
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+
+<div class="filter-results-box">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      <p>Proportion of people physically active for at least one hour per day seven days a week (current method)</p>
+    </label>
+  </div>
+</div>
+
+<div class="filter-results-box">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      <p>Proportion of people physically active for at least 30-149 minutes per week (historical method)</p>
+    </label>
+  </div>
+</div>
+
+<div class="filter-results-box">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      <p>Proportion of people self reporting BMI in the average zone</p>
+    </label>
+  </div>
+</div>
+
+<div class="filter-results-box">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      <p>Proportion of people with BMI in the average zone</p>
+    </label>
+  </div>
+</div>
+
+<div class="filter-results-box">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+      <p>Satisfaction of people carrying out physical activity</p>
+    </label>
+  </div>
+</div>
+<br>
+<div class="block-space">
+	<a class="govuk-button button-secondary" type="submit">
+		Copy selected indicators
+	</a>
+</div>
+<div class="block-space">
+	<a class="govuk-button button-affordance" type="submit">
+		Download selected indicators
+	</a>
+</div>
+<p>
+<a href="browseindicators.html" style="text-decoration:none;">
+  Next step
+    <span class="hod-chevron-right side-space icon-small"></span>
+</a>
+</p>
+
+</div>
+</div>
+
+{% endblock %}

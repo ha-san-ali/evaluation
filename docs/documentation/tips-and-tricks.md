@@ -1,6 +1,6 @@
 # Tips and tricks
 
-A few useful things to help you get started.
+A few useful things to help you Get started.
 
 ## Update the Service name
 

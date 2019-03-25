@@ -7,7 +7,6 @@
   var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
   stepByStepNavigation.start($element)
 </script>
-<!--part of-->
 {% endblock %} {% block beforeContent %}
 <div class="app-step-nav-header">
   <span class="app-step-nav-header__part-of">Part of</span>
@@ -15,50 +14,39 @@
     Evaluating Health Products
   </a>
 </div>
-<!--part of-->
 {% endblock %} {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-xl">Create a logic model</h1>
-    <h2 class="govuk-heading-m">What is a logic model?</h2>
-    <p>Logic modelling is a tool that can be useful in the development of monitoring and evaluation plans as they help to identify short-, medium- and long-term outcomes that are linked to the key activities of a programme or strategy.</p>
+    <h1 class="govuk-heading-xl">
+    Analyse your data</h1>
 
-    <h2 class="govuk-heading-m">Why create a logic model?</h2>
-    <p>Use a logic model to understand what the intended health outcomes of your digital health intervention are, and how they will be achieved.</p>
-    <p>Logic models are usually designed by a study team rather than a single researcher. We recommend holding a workshop with your key stakeholders to develop your logic model together. </p>
-    <p>Ideally, logic models should be developed during intervention development, or in the early stages of planning an evaluation, so that they can be used to inform the design of the process evaluation and data collection.</p>
+    <h2 class="govuk-heading-m">
+  Quantitative data analysis</h2>
+  <p>The first stage of analyzing data is data preparation, where the aim is to convert raw data into something meaningful and readable. It includes four steps:</p>
 
-<div class="filter-results-box">
-    <h2 class="govuk-heading-m">Case study: Couch to 5K</h2>
-    <p>The Couch to 5K team built their logic model in a face-to-face workshop. Starting with the logic model template, they sat down to discuss the various elements. </p>
-    <p>First, they clearly framed their hypothesis: that their app would help users be more active and lose weight. </p>
-    <p>Then, they thought about how this would be expressed as individual health outcomes, from short to long term.  Next, they considered the specific outputs their service could create to help reach those outcomes, like “The user completes a 5K run”.</p>
-    <p>Once it was completed, the team’s logic model gave them a clear and standardised overview of their project’s components.</p>
+  <h3 class="govuk-heading-s">
+    Step 1: Data Validation</h3>
+  <p>The purpose of data validation is to find out, as far as possible, whether the data collection was done as per the pre-set standards and without any bias. It is a four-step process, which includes:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Fraud, to infer whether each respondent was actually interviewed or not.</li>
+    <li>Screening, to make sure that respondents were chosen as per the research criteria.</li>
+    <li>Procedure, to check whether the data collection procedure was duly followed.</li>
+    <li>Completeness, to ensure that the interviewer asked the respondent all the questions, rather than just a few required ones.</li>
+  </ul>
 
-    <img src="public/images/logic-model.png" alt="logic-model.png" style="max-width:570px;">
-    <p> </p>
-</div>
+    <h3 class="govuk-heading-s">
+      Step 2: Data Editing</h3>
+    <p>Typically, large data sets include errors. For example, respondents may fill fields incorrectly or skip them accidentally. To make sure that there are no such errors, the researcher should conduct basic data checks, check for outliers, and edit the raw research data to identify and clear out any data points that may hamper the accuracy of the results.</p>
+    <p>For example, an error could be fields that were left empty by respondents. While editing the data, it is important to make sure to remove or fill all the empty fields. (Here are 4 methods to deal with missing data.</p>
 
-    <h2 class="govuk-heading-m">How to create a logic model</h2>
+    <h3 class="govuk-heading-s">
+      Step 3: Data Coding</h3>
+    <p>This is one of the most important steps in data preparation. It refers to grouping and assigning values to responses from the survey.</p>
+    <p>For example, if a researcher has interviewed 1,000 people and now wants to find the average age of the respondents, the researcher will create age buckets and categorize the age of each of the respondent as per these codes. (For example, respondents between 13-15 years old would have their age coded as 0, 16-18 as 1, 18-20 as 2, etc.)</p>
+    <p>Then during analysis, the researcher can deal with simplified age brackets, rather than a massive range of individual ages.</p>
 
-    <h3 class="govuk-heading-s">Hypothesis and Assumptions<h3>
-    <p>Explain the problem you are trying to solve or the opportunity you are exploring. Consider any assumptions that you have about the digital health intervention and your project. Think about what your digital health intervention needs to do to be successful. </p>
 
-    <h3 class="govuk-heading-s">Outcomes<h3>
-    <p>Think about how your digital health intervention could improve the public's health, and decide on the health outcomes that your digital health intervention is trying to achieve. Health outcomes are the direct and specific results of an intervention, usually for those receiving the care or otherwise targeted. These might include things like reducing diabetes rates. </p>
-
-    <h3 class="govuk-heading-s">Inputs and activities<h3>
-    <p>List the resources you have available for your project, including your budget, equipment and the people and organisations working on it. Decide on the processes, events, technology and actions you will use to deliver your digital health intervention.</p>
-
-    <h3 class="govuk-heading-s">Outputs<h3>
-    <p>Consider how your digital health intervention, and its interactions with your users, could create your chosen health outcomes. What specific things will your intervention need to deliver to make them happen? You may also think about how your digital health intervention could negatively impact on these health outcomes.</p>
-
-    <h3 class="govuk-heading-s">Context and barriers<h3>
-    <p>Describe the users of your digital health intervention, the policies or strategies that it supports, and the funding you have.Discuss any constraints that may stop you from delivering your digital health intervention, or keep it from being successful.</p>
-
-  <h2 class="govuk-heading-m">Create a logic model in a workshop</h2>
-  <p><a href="https://drive.google.com/drive/u/0/folders/1RLkLtdnAbr7AoYzhiXnNsKJNnSVHdj38">Click here to download a printable template</a></p>
 
   </div>
 
