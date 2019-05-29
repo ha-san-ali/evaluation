@@ -1,5 +1,5 @@
 
-Help us improve the GOV.UK Prototype Kit
+Help us improve the Evaluating Health Products
 ────────────────────────────────────────
 
 With your permission, the kit can send useful anonymous usage data

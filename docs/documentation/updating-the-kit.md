@@ -6,7 +6,7 @@ If you have made any changes outside the `app` folder, this process will destroy
 
 ## Updating from version 6 to version 7
 
-Version 7 of the GOV.UK Prototype Kit is a large change from previous versions.
+Version 7 of the Evaluating Health Products is a large change from previous versions.
 
 If you have a large old prototype, follow this [guide to backward compatibility](/docs/backwards-compatibility) which lets you update the Prototype Kit without having to rewrite all your pages at once.
 

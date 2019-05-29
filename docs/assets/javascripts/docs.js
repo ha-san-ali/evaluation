@@ -5,7 +5,7 @@ if (
   window.sessionStorage && window.sessionStorage.getItem('prototypeWarning') !== 'false' &&
   window.console && window.console.info
 ) {
-  window.console.info('GOV.UK Prototype Kit - do not use for production')
+  window.console.info('Evaluating Health Products - do not use for production')
   window.sessionStorage.setItem('prototypeWarning', true)
 }
 

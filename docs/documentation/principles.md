@@ -1,6 +1,6 @@
 # Principles
 
-The GOV.UK Prototype Kit:
+The Evaluating Health Products:
 
 - is designed for prototyping, not for production code
 - requires minimal skills to Get started: HTML, CSS
