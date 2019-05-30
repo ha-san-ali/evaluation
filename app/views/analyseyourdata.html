@@ -1,5 +1,16 @@
 {% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %}
 <!-- Blank header with no service name for the start page -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141128254-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141128254-1');
+</script>
+
 {{ govukHeader() }} {% endblock %} {% block pageScripts %}
 <script src="/public/javascripts/step-by-step-navigation.js"></script>
 <script type="text/javascript">
